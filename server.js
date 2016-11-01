@@ -26,7 +26,7 @@ app.use(express.static('client'))
 app.use('/api', apiRoutes)
 
 app.get('*', function(req,res){
-  res.sendFile('./client/index.html', {root:'./'})
+  res.sendFile('/client/index.html', {root:'/'})
 })
 
 
