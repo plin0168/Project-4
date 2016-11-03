@@ -1,0 +1,13 @@
+<section ng-app="theGameRepo" ng-controller="youtubeController as yc">
+  <div class="container">
+    <h2 ng-bind="yc.message"></h2>
+    <div class="youtube-thumbnail col-md-4" ng-repeat="vid in yc.videoListing">
+      <a ng-href="https://www.youtube.com/watch?v={{vid.id.videoId}}" target="_blank">
+        <img ng-src={{vid.snippet.thumbnails.medium.url}} />
+        <p ng-bind="vid.snippet.title"></p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<h1>Welcome to Youtube page</h1>

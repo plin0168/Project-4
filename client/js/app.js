@@ -1,4 +1,4 @@
-var theGameRepo = angular.module('theGameRepo', ['ui.router','ui.bootstrap'])
+var theGameRepo = angular.module('theGameRepo',['ui.router','ui.bootstrap'])
   .config(['$stateProvider','$urlRouterProvider', '$locationProvider', router])
   .directive('navigationBar', navigationBar)
 

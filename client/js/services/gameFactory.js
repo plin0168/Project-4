@@ -1,5 +1,5 @@
 angular.module('theGameRepo')
-  .factory('GameFactory', ['$http', GameFactory])
+  .factory('GameFactory',['$http', GameFactory])
 
 
 function GameFactory($http){

@@ -63,3 +63,42 @@ section h3.section-subheading {
     padding: 150px 0;
   }
 }
+
+body, html {
+  background: #676767;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.youtube-thumbnail {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  height: 225px;
+  p {
+    font-weight: 300;
+    margin-top: 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+  }
+
+  a {
+    color: #fff;
+    &:hover {
+      color: darkorange;
+      text-decoration: none;
+    }
+  }
+}
