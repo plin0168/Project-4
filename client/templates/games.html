@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="page-header">
+        <h1>
+          the WALL
+          <!-- Pluralize 'Results' if more than 1 or 0 -->
+          <small>
+            ({{filteredGames.length}} Game<span ng-if="filteredGames.length > 1 || !filteredGames.length">s</span>)
+          </small>
+    </div>
+        </h1>
+      </div>
+      <div class="list-group">
+        <div  class="list-group-item clearfix car" ng-repeat="game in gc.games | filter: gameFilter as filteredGames">
+          <div class="row">
+            <div class="col-sm-3 text-center">
+              <img ui-sref="game({id: game._id})" ng-src="{{ game.image }}">
+            </div>
+            <div class="col-sm-9">
+              <h3>{{$index}}{{ game.name }} <button ng-click="gc.destroyGame(game, $index)">Delete</button> </small></h3>
+              <p>
+                {{ game.description | limitTo: gc.textLimit}}
+                <span ng-if="game.description.length > gc.textLimit">...</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

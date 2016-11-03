@@ -1,0 +1,65 @@
+.nav, .pagination, .carousel, .panel-title a, *[ui-sref] { cursor: pointer; }
+
+.container {
+  padding-top: 25px;
+}
+
+.car img {
+  max-width: 100%;
+  margin-right: 25px;
+}
+
+#services .glyphicon{
+  font-size: 110px;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: inherit
+}
+
+.game-image{
+  max-width: 100%;
+}
+
+header .intro-text .intro-lead-in {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 22px;
+  margin-bottom: 25px;
+}
+
+header {
+  background-image: url('../../img/shoretroopers.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  color: white;
+}
+
+section {
+  padding: 100px 0;
+}
+section h2.section-heading {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+section h3.section-subheading {
+  font-size: 16px;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: none;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 75px;
+}
+@media (min-width: 768px) {
+  section {
+    padding: 150px 0;
+  }
+}
