@@ -28,6 +28,11 @@ function router($stateProvider, $urlRouterProvider, $locationProvider){
       templateUrl:'templates/game.html',
       controller: 'SingleGameController as sgc'
     })
+    .state('youtube',{
+      url: '/youtube',
+      templateUrl:'templates/youtube.html',
+      controller: 'YoutubeController as yc'
+    })
 }
 
 function navigationBar(){
