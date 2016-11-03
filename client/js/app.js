@@ -19,7 +19,7 @@ function router($stateProvider, $urlRouterProvider, $locationProvider){
       controller: 'GamesController as gc'
     })
     .state('share', {
-      url: '/games/share',
+      url: '/share',
       templateUrl: 'templates/share.html',
       controller: 'ShareGameController as sgc'
     })

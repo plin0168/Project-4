@@ -7,15 +7,16 @@ function GameFactory($http){
     index: index,
     show:show,
     destroy:destroy,
-    create:create
+    create:create,
+    update:update
   }
 
   function index(){
     return $http.get('/api/games')
   }
 
-  function show(id){
-    return $http.get('/api/games' + id)
+  function show(paramsFromCtrl){
+    return $http.get('/api/games' + paramsFromCtrl)
   }
 
   function destroy(id){
@@ -24,5 +25,9 @@ function GameFactory($http){
 
   function create(game){
     return $http.post('/api/games', game)
+  }
+
+  function update(id, game){
+    return $http.patch('/api/games' + id, game)
   }
 }
