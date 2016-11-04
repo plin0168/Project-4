@@ -47,3 +47,8 @@ HTML, CSS/bootstrap, Angularjs + Javascript, MongoDB
 * Edit posts
 * Create exclusive rights for users to edit their individual posts
 * Upload to Heroku
+
+## Special thanks
+* phillippe
+* Garrett
+* Kevin
