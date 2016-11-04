@@ -42,11 +42,11 @@ HTML, CSS/bootstrap, Angularjs + Javascript, MongoDB
 * User can delete posts 
 
 ## Future goals
-* Implement third-party API; preferrably using Youtube for sharing purposes
+* Successfully implement third-party API; preferrably using Youtube for sharing purposes
 * Create Log-in feature
 * Edit posts
 * Create exclusive rights for users to edit their individual posts
-* Upload to Heroku
+
 
 ## Special thanks
 * phillippe
