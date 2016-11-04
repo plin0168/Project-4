@@ -6,7 +6,7 @@ YoutubeController.$inject = ['GameFactory', '$http']
 function YoutubeController(GameFactory, $http) {
     var vm = this;
     vm.videoListing = [];
-    vm.message = "Youtube Data API with AngularJS";
+    vm.message = "Star Wars Youtube Video Channel!";
 
     // var showVideos,
     //     getVideos;
