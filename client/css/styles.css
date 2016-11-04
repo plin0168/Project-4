@@ -4,23 +4,15 @@
   padding-top: 25px;
 }
 
-
-/*.car img {
-  max-width: 100%;
-  margin-right: 25px;
-}*/
-
-#services .glyphicon{
-  font-size: 110px;
+button{
+  background: red;
 }
+
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
   border-color: inherit
 }
 
-/*div .background {
-  background-image: url('../../img/shoretroopers.jpeg');
-}*/
 
 img {
   margin: auto;
@@ -31,15 +23,7 @@ img {
 
 }
 
-/*.game-image{
-  max-width: 100%;
-    max-width: 1408px;
-  background-image: url('../../img/shoretroopers.jpeg');
-  background-repeat: no-repeat;
 
-  background-position: center center;
-
-}*/
 
 header .intro-text .intro-lead-in {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -50,17 +34,14 @@ header .intro-text .intro-lead-in {
 
 }
 
-header {
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  text-align: center;
-  color: white;
+h3{
+  color: black;
 }
+
+p {
+  color: black;
+}
+
 
 section {
   padding: 100px 0;
@@ -79,17 +60,6 @@ section h3.section-subheading {
   margin-bottom: 75px;
 }
 
-
-/*@media (min-width: 768px) {
-  section {
-    padding: 150px 0;
-  }
-}*/
-
-/*section .backgroundImg {
-  background-image: url('../../img/shoretroopers.jpeg');
-
-}*/
 
 body, html {
 
