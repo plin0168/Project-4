@@ -32,7 +32,8 @@ function GameFactory($http){
   }
 
   function getVideo(){
-    var apiKey = process.env.API_KEY
+    // var apiKey = process.env.API_KEY
+    var apiKey = "AIzaSyBEdo7-BuluP3i-xgKQxa6SombQ2pL0wF8"
     var apiURL = "https://www.googleapis.com/youtube/v3/channels?id=UCCWQ_UwBYZSHDUtkC1nTyXw&" + apiKey + "&videoEmbeddable=true&order=date&part=snippet&=video&maxResults=10"
     // https://www.googleapis.com/youtube/v3/channels?id=fjTOrCPnAblTngWAzpnlMA&key={YOUR_API_KEY}&part=snippet,contentDetails,statistics
     return $http.get(apiURL);
