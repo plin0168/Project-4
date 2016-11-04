@@ -1,9 +1,7 @@
-(function(){
-  'use strict';
 angular.module('theGameRepo')
-    .controller('YoutubeController', ['$http',YoutubeController]);
+    .controller('YoutubeController', YoutubeController);
 
-YoutubeController.$inject = ['GameFactory']
+YoutubeController.$inject = ['GameFactory', '$http']
 
 function YoutubeController(GameFactory, $http) {
     var vm = this;
@@ -17,16 +15,18 @@ function YoutubeController(GameFactory, $http) {
         // var apiURL = "https://www.googleapis.com/youtube/v3/channels?id=UCCWQ_UwBYZSHDUtkC1nTyXw&key=AIzaSyBEdo7-BuluP3i-xgKQxa6SombQ2pL0wF8&typesearch?videoEmbeddable=true&order=date&part=snippet&=video&maxResults=10"
     // // var youtubeService = {}
 
-    GameFactory.getVideos = function($http) {
-      return $http.get(apiURL);
-    };
+    // GameFactory.getVideos = function($http) {
+    //   return $http.get(apiURL);
+    // };
 
-    var showVideos = function() {
-      GameFactory.getVideos()
-        .success(function(data) {
-          vm.videoListing = data.items;
-        });
-    }
-    showVideos();
-  }
-})();
+    GameFactory.getVideo();
+    //
+    // var showVideos = function() {
+    //   GameFactory.getVideos()
+    //     .success(function(data) {
+    //       vm.videoListing = data.items;
+    //     });
+    // }
+    // showVideos();
+  // }
+}

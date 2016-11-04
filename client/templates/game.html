@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="page-header">
+<h1>{{spc.game.name}}</h1>
+    </div>
+    <div class="col-md-6">
+      <img class="car-image" ng-src="{{spc.game.image}}" />
+    </div>
+    <div class="col-md-6" >
+      <p>{{spc.game.description}}</p>
+      <button ng-click="spc.destroyGame()" class="btn btn-small btn-danger" name="button">Delete</button>
+    </div>
+  </div>
+</div>

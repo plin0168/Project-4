@@ -26,7 +26,7 @@ function router($stateProvider, $urlRouterProvider, $locationProvider){
     .state('game', {
       url: '/games/:id',
       templateUrl:'templates/game.html',
-      controller: 'SingleGameController as sgc'
+      controller: 'SinglePostController as spc'
     })
     .state('youtube',{
       url: '/youtube',

@@ -1,8 +1,5 @@
-(function() {
-  'use strict';
 angular.module('theGameRepo')
   .factory('GameFactory',['$http', GameFactory])
-
 
 function GameFactory($http){
   return{
@@ -10,7 +7,8 @@ function GameFactory($http){
     show:show,
     destroy:destroy,
     create:create,
-    update:update
+    update:update,
+    getVideo: getVideo
   }
 
   function index(){
@@ -32,17 +30,25 @@ function GameFactory($http){
   function update(id, game){
     return $http.patch('/api/games' + id, game)
   }
+
+  function getVideo(){
+    var apiKey = "AIzaSyBEdo7-BuluP3i-xgKQxa6SombQ2pL0wF8"
+    // var apiURL = "https://www.googleapis.com/youtube/v3/channels?id=UCCWQ_UwBYZSHDUtkC1nTyXw&key=AIzaSyBEdo7-BuluP3i-xgKQxa6SombQ2pL0wF8&typesearch?videoEmbeddable=true&order=date&part=snippet&=video&maxResults=10"
+    var apiURL = "https://www.googleapis.com/youtube/v3/channels?id=UCCWQ_UwBYZSHDUtkC1nTyXw&key=AIzaSyBEdo7-BuluP3i-xgKQxa6SombQ2pL0wF8&videoEmbeddable=true&order=date&part=snippet&=video&maxResults=10"
+    // https://www.googleapis.com/youtube/v3/channels?id=fjTOrCPnAblTngWAzpnlMA&key={YOUR_API_KEY}&part=snippet,contentDetails,statistics
+    return $http.get(apiURL);
+  }
 }
-var apiKey = "AIzaSyBEdo7-BuluP3i-xgKQxa6SombQ2pL0wF8"
-var apiURL = "https://www.googleapis.com/youtube/v3/channels?id=UCCWQ_UwBYZSHDUtkC1nTyXw&key=AIzaSyBEdo7-BuluP3i-xgKQxa6SombQ2pL0wF8&typesearch?videoEmbeddable=true&order=date&part=snippet&=video&maxResults=10"
-// https://www.googleapis.com/youtube/v3/channels?id=fjTOrCPnAblTngWAzpnlMA&key={YOUR_API_KEY}&part=snippet,contentDetails,statistics
-
-GameFactory.getVideos = function() {
-  return $http.get(apiURL);
-};
-
-return GameFactory()
-})();
+// var apiKey = "AIzaSyBEdo7-BuluP3i-xgKQxa6SombQ2pL0wF8"
+// var apiURL = "https://www.googleapis.com/youtube/v3/channels?id=UCCWQ_UwBYZSHDUtkC1nTyXw&key=AIzaSyBEdo7-BuluP3i-xgKQxa6SombQ2pL0wF8&typesearch?videoEmbeddable=true&order=date&part=snippet&=video&maxResults=10"
+// // https://www.googleapis.com/youtube/v3/channels?id=fjTOrCPnAblTngWAzpnlMA&key={YOUR_API_KEY}&part=snippet,contentDetails,statistics
+//
+// GameFactory.getVideos = function() {
+//   return $http.get(apiURL);
+// };
+//
+// return GameFactory()
+// })();
 // (function() {
 //   'use strict';
 //

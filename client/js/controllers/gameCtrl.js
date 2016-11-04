@@ -1,9 +1,9 @@
 angular.module('theGameRepo')
-  .controller('SingleGameController', SingleGameController)
+  .controller('SinglePostController', SinglePostController)
 
-SingleGameController.$inject = ['$stateParams', '$state', 'GameFactory']
+SinglePostController.$inject = ['$stateParams', '$state', 'GameFactory']
 
-function SingleGameController($stateParams, $state, GameFactory){
+function SinglePostController($stateParams, $state, GameFactory){
   var vm = this
 
   console.log($stateParams)
