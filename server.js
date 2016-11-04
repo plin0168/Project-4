@@ -11,10 +11,11 @@ var
   passportConfig = require('./server/config/passport.js'),
   cookieParser = require('cookie-parser'),
   methodOverride = require('method-override'),
-  apiRoutes = require('./server/routes/games.js')
+  apiRoutes = require('./server/routes/games.js'),
+  dotenv = require('dotenv').load({silent:true})
 
 //mongoose connection
-mongoose.connect('mongodb://localhost/', function(err){
+mongoose.connect(process.env.MONGO_URL, function(err){
   if(err) return console.log('there seems to be an issue connecting..')
   console.log('Connected. Sweet! :]');
 })
