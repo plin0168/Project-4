@@ -44,3 +44,4 @@ HTML, CSS/bootstrap, Angularjs + Javascript, MongoDB
 * Create Log-in feature
 * Edit posts
 * Create exclusive rights for users to edit their individual posts
+* Upload to Heroku
